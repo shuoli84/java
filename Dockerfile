@@ -5,6 +5,8 @@
 # Pull base image.
 FROM index.alauda.cn/library/ubuntu:trusty
 
+RUN apt-get install software-properties-common
+
 # Install Java.
 RUN \
   echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | debconf-set-selections && \
