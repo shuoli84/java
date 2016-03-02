@@ -5,7 +5,7 @@
 # Pull base image.
 FROM index.alauda.cn/library/ubuntu:trusty
 
-RUN apt-get install software-properties-common
+RUN apt-get install -y software-properties-common
 
 # Install Java.
 RUN \
